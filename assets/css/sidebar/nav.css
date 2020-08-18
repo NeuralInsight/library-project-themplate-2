@@ -41,6 +41,14 @@ main {
     justify-content: center;
 
 }
+
+.side-item-wrapper{
+    height: 100%;
+    width: 100%;
+    margin-top: 6rem;
+
+
+}
 .sidebar {
     width: 6rem;
     height: 98%;
