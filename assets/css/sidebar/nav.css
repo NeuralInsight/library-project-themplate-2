@@ -35,16 +35,16 @@ main {
 
 .sidebar-wrapper{
     height: 100vh;
-    width: 6rem;
+    width: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: aquamarine;
+
 }
 .sidebar {
     width: 6rem;
     height: 98%;
-    border-radius: 12px;
+    border-radius: 0px 12px 12px 0px;
     /* position: fixed; */
     background-color: var(--bg-primary);
     transition: width 250ms ease-out;
@@ -93,7 +93,7 @@ main {
 
 .side-link svg {
     width: 2rem;
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
 .sidebar:hover {
