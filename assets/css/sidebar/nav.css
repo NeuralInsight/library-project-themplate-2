@@ -43,7 +43,7 @@ main {
 }
 .sidebar {
     width: 6rem;
-    height: 97vh;
+    height: 98%;
     border-radius: 12px;
     /* position: fixed; */
     background-color: var(--bg-primary);
@@ -173,8 +173,8 @@ main {
 @media only screen and (min-width:600px) {
     .sidebar {
         top: 0;
-        width: 6rem;
-        height: 97vh;
+        width: 7rem;
+        height: 99%;
     }
 
     .sidebar:hover {
