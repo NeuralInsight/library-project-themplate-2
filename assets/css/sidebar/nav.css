@@ -34,7 +34,7 @@ main {
 
 .sidebar {
     width: 5rem;
-    height: 100vh;
+    height: 90vh;
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 250ms ease-out;
