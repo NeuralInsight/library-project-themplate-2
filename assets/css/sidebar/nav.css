@@ -116,6 +116,10 @@ main {
     border-radius: 5px;
 }
 
+.side-link:hover svg{
+    fill: black;
+}
+
 .side-link-logo:hover {
     color: var(--text-secondary);
     text-decoration: none;
@@ -136,12 +140,14 @@ main {
 }
 
 .side-link svg {
+    fill: white;
     width: 4rem;
     margin: 0 2rem;
     padding: 10px;
 }
 
 .side-link-active svg {
+    fill: var(--bg-primary);
     width: 4rem;
     margin: 0 2rem;
     padding: 10px;
