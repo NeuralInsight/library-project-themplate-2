@@ -1,10 +1,10 @@
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --text-primary: #ffffff;
+    --text-secondary: #000000;
+    --bg-primary: rgb(159, 111, 248);
+    --bg-secondary: rgb(235, 225, 255);
 }
 
 body {
@@ -55,7 +55,7 @@ main {
     height: 98%;
     border-radius: 0px 15px 15px 0px;
     /* position: fixed; */
-    background-color: var(--bg-primary);
+    background: var(--bg-primary);
     transition: width 250ms ease-out;
 }
 
@@ -83,16 +83,18 @@ main {
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
-    filter: grayscale(100%) opacity(0.7);
+    color: white;
+    transition: ease-out 500ms;
 
 }
 
 .side-link:hover {
-    filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
     text-decoration: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    border-radius: 5px;
 }
 
 .link-text {
@@ -139,7 +141,7 @@ main {
     text-align: center;
     color: var(--text-secondary);
     border-radius:12px ;
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
