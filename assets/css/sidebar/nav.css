@@ -27,11 +27,11 @@ body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
 
-/* main {
+main {
     right: 0;
     margin-left: 5rem;
     padding: 1rem;
-} */
+}
 
 .sidebar-wrapper{
     height: 100vh;
