@@ -141,9 +141,10 @@ main {
 
 .side-link svg {
     fill: white;
-    width: 4rem;
+    width: 3rem;
     margin: 0 2rem;
     padding: 10px;
+    transition: none;
 }
 
 .side-link-active svg {
@@ -162,6 +163,7 @@ main {
 .sidebar:hover .link-text {
     display: block;
 }
+
 
 .fa-primary {
     color: #ff7eee;
