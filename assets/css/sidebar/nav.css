@@ -91,6 +91,7 @@ main {
 
 }
 
+
 .side-link-logo {
     display: flex;
     align-items: center;
@@ -135,9 +136,20 @@ main {
 }
 
 .side-link svg {
-    width: 2rem;
+    width: 4rem;
     margin: 0 2rem;
+    padding: 10px;
 }
+
+.side-link-active svg {
+    width: 4rem;
+    margin: 0 2rem;
+    padding: 10px;
+    color: var(--bg-primary);
+    background: white;
+    border-radius: 10px;
+}
+
 
 .sidebar:hover {
     width: 16rem;
