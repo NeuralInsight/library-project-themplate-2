@@ -10,13 +10,37 @@
 }
 .right-div{
     background-color: blue;
+    padding: 1rem;
 }
-.my-book-body{
+.my-books{
     background-color: white;
+    border-radius: 8px;
 }
-.my-books_book{
+.my-books-header{
+    background-color: wheat;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+}
+.header-btn{
+   
+    
+}
+.header-titel{
+    
+}
+
+.my-book-body{
+    
+}
+.my-book{
     border-radius: 15px;
     background-color: wheat;
+    width: 25rem;
+    max-height: 281.99px;
+    padding: 1.5rem;
+}
+.my-book_img{
+    
 }
 .left-div{
     background-color: red;
