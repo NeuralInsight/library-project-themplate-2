@@ -91,11 +91,33 @@ main {
 
 }
 
+.side-link-logo {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    transition: ease-out 500ms;
+
+}
+
+.side-link-logo svg {
+    width: 2rem;
+    margin: 0 2rem;
+}
+
 .side-link:hover {
     background: var(--bg-secondary);
     color: var(--text-secondary);
     text-decoration: none;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.side-link-logo:hover {
+    color: var(--text-secondary);
+    text-decoration: none;
     margin-right: 20px;
     z-index: 10;
     border-radius: 5px;
@@ -152,13 +174,13 @@ main {
 }
 
 .logo svg {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     transition: 200ms ease;
 }
 
 
 .sidebar:hover .logo svg {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
 
 }
 
