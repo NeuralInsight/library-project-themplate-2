@@ -148,9 +148,7 @@ main {
 
 .side-link-active svg {
     fill: var(--bg-primary);
-    width: 4rem;
     margin: 0 2rem;
-    padding: 10px;
     color: var(--bg-primary);
     background: white;
     border-radius: 10px;
