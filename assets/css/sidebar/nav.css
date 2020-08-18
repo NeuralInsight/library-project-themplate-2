@@ -49,7 +49,7 @@ main {
 .side-item-wrapper{
     height: 100%;
     width: 100%;
-    margin-top: 7.5rem;
+    padding-top: 7.5rem;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -60,7 +60,7 @@ main {
 }
 .sidebar {
     width: 6rem;
-    height: 98%;
+    height: 120rem;
     border-radius: 15px 0px 0px 15px;
     direction: rtl;
     /* position: fixed; */
@@ -246,7 +246,7 @@ main {
     .sidebar {
         top: 0;
         width: 7rem;
-        height: 98%;
+        height: 98vh;
     }
 
     .sidebar:hover {
@@ -258,3 +258,4 @@ main {
         transition: opacity var(--transition-speed);
     }
 }
+
