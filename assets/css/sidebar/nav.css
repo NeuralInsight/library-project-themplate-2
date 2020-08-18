@@ -50,6 +50,11 @@ main {
     height: 100%;
     width: 100%;
     margin-top: 7.5rem;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
 
 
 }
@@ -60,7 +65,7 @@ main {
     direction: rtl;
     /* position: fixed; */
     background: var(--bg-primary);
-    transition: width 250ms ease-out;
+    transition: width 0.3s ease-out ;
 }
 
 .sidebar-nav {
@@ -71,12 +76,14 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    
 
 }
 
 .side-item {
     width: 100%;
     margin: 1rem 0;
+    
 }
 
 .side-item:last-child {
@@ -119,6 +126,7 @@ main {
 
 .side-link:hover svg{
     fill: black;
+    
 }
 
 .side-link-logo:hover {
@@ -145,7 +153,8 @@ main {
     width: 3rem;
     margin: 0 2rem;
     padding: 10px;
-    transition: none;
+
+
 }
 
 .side-link-active svg {
