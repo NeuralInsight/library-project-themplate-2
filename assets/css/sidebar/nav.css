@@ -91,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+
 .side-link-logo {
     display: flex;
     align-items: center;
@@ -115,6 +116,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
+.side-link:hover svg{
+    fill: black;
+}
+
 .side-link-logo:hover {
     color: var(--text-secondary);
     text-decoration: none;
@@ -135,9 +140,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .side-link svg {
-    width: 2rem;
+    fill: white;
+    width: 4rem;
     margin: 0 2rem;
+    padding: 10px;
 }
+
+.side-link-active svg {
+    fill: var(--bg-primary);
+    width: 4rem;
+    margin: 0 2rem;
+    padding: 10px;
+    color: var(--bg-primary);
+    background: white;
+    border-radius: 10px;
+}
+
 
 .sidebar:hover {
     width: 16rem;
