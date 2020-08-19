@@ -50,16 +50,30 @@ header{
     margin-right: 1rem;
 }
 
+.tools_notify svg{
+    fill: rgb(104, 104, 104);
+
+}
+
+.tools_notify:hover svg {
+    fill: black;
+
+}
+
 .tools_notify:hover {
     fill: black;
 }
 
 .tools_settings {
-    fill:rgb(104, 104, 104);
+    
     width: 1.7rem;
 }
 
-.tools_settings:hover {
+.tools_settings svg{
+    fill:rgb(104, 104, 104);
+}
+
+.tools_settings:hover svg{
     fill: black;
 }
 
