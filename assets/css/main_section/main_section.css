@@ -12,12 +12,15 @@
 .my-books {
     border-radius: 8px;
 }
-.my-books-header {
+.content-header {
     background-color: white;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .header-titel h4 {
     margin: 0;
@@ -29,23 +32,59 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center !important;
 }
 .my-book {
     display: flex;
     border-radius: 15px;
     background-color: wheat;
     flex-basis: 30%;
-    align-items: center;
+    align-items: center !important;
     padding: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-out;
 }
+.my-book:hover {
+    flex-basis: 33%;
+}
+
 .my-book_img {
     margin-right: 1rem;
     flex: 1;
+    position: relative;
 }
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-primary);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.3s ease;
+    border-radius: 3px;
+}
+.img-overlay-text a {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
 .my-book_img img {
     min-width: 24%;
 }
+.my-book_img:hover .img-overlay {
+    width: 100%;
+}
+
 .my-book_info {
     display: flex;
     flex-direction: column;
@@ -112,9 +151,69 @@
 #my-book-body_right {
     background-color: #a6ecd7;
 }
-.p-writers {
+
+#p-writers-and-reding {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-writers {
+    flex-basis: 33%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.readding-books {
+    background-color: blue;
+    flex-basis: 63%;
+}
+.p-writers-col {
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+}
+.p-writer {
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin: 0.1rem 0rem;
+    border-radius: 3px;
+    transition: 150ms ease-out;
+}
+.p-writer:hover {
+    margin: 0rem -0.8rem;
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.2);
+}
+.p-writer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p-writer-info img {
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+}
+.p-writer-info img:hover {
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+.p-writer-info p {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 0.8rem;
+}
+.notebook-icon i {
+    color: var(--bg-primary);
+}
+.notebook-icon i:hover {
+    color: rgb(134, 74, 245);
 }
 
 .left-div {
-    background-color: red;
 }
