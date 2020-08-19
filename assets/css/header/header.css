@@ -106,6 +106,7 @@ input[type=search]{
     margin: 0 1rem;
     padding: 1rem;
     border: 0;
+    outline: none;
     border-bottom: 1px solid rgb(179, 179, 179);
     transition: 0.5s ease-out;
 }
@@ -130,4 +131,8 @@ input[type=search]:focus {
 .btn_p_sm:hover {
 
     box-shadow: 5px 5px 60px 5px rgba(0, 0, 0, 0.171);
+}
+
+.btn_p_sm:focus {
+    outline: none;
 }
