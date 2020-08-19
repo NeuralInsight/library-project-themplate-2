@@ -1,12 +1,18 @@
 header{
     width: calc(100vw - 7rem);
-    height: 6rem;
+    height: 7rem;
     /* background: #b6b6b6; */
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     flex-wrap: nowrap;
     flex-flow: row;
-    padding: 0.5rem 3rem;
+    padding: 1rem 3rem;
+}
+
+.item_container{
+    display: flex;
+    flex-flow: row nowrap;
+
 }
 
 .profile_item{
@@ -55,4 +61,59 @@ header{
 
 .tools_settings:hover {
     fill: black;
+}
+
+.search_box {
+    /* background: #057dce; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+
+.search_form{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    direction: rtl;    
+}
+
+.search_box span{
+    margin-left: 2rem;
+    color: rgb(136, 136, 136);
+}
+
+input[type=search]{
+    direction: rtl;
+    text-align: right;
+    width: 40rem;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 0;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    transition: 0.5s ease-out;
+}
+
+input[type=search]:focus {
+    color: rgb(159, 111, 248);
+    border-bottom: 1.5px solid rgb(159, 111, 248);
+}
+
+.btn_p_sm{
+    background: white;
+    fill: rgb(159, 111, 248);
+    width: 4.5rem;
+    padding: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.137);
+    transition: 0.5s ease-out;
+}
+
+.btn_p_sm:hover {
+
+    box-shadow: 5px 5px 60px 5px rgba(0, 0, 0, 0.171);
 }
