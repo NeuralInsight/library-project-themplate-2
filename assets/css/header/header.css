@@ -56,13 +56,11 @@ header{
 }
 
 .tools_notify:hover svg {
-    fill: black;
+    fill: rgb(148, 94, 248);
 
 }
 
-.tools_notify:hover {
-    fill: black;
-}
+
 
 .tools_settings {
     
@@ -74,7 +72,7 @@ header{
 }
 
 .tools_settings:hover svg{
-    fill: black;
+    fill: rgb(159, 111, 248);
 }
 
 .search_box {
@@ -108,7 +106,7 @@ input[type=search]{
     border: 0;
     outline: none;
     border-bottom: 1px solid rgb(179, 179, 179);
-    transition: 0.5s ease-out;
+    transition: 0.3s ease-in;
 }
 
 input[type=search]:focus {
@@ -134,5 +132,6 @@ input[type=search]:focus {
 }
 
 .btn_p_sm:focus {
+    background: rgb(245, 239, 255);
     outline: none;
 }
