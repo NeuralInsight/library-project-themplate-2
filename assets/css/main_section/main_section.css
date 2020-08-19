@@ -208,6 +208,9 @@
     font-size: 14px;
     margin-left: 0.8rem;
 }
+.notebook-icon {
+    margin-right: .5rem;
+}
 .notebook-icon i {
     color: var(--bg-primary);
 }
