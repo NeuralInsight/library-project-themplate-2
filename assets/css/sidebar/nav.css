@@ -9,7 +9,7 @@
 
 body {
     color: black;
-    background-color: white;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     position: relative;
@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 main {
     right: 0;
     margin-left: 5rem;
-    padding: 1rem;
+    padding: 1rem
 }
 
 .sidebar-wrapper{
