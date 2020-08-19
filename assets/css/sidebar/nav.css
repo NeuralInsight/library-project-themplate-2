@@ -23,24 +23,30 @@ main {
     position: fixed;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 
 }
 
 .side-item-wrapper{
     height: 100%;
     width: 100%;
-    margin-top: 7.5rem;
+    padding-top: 7.5rem;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
 
 
 }
 .sidebar {
     width: 6rem;
-    height: 98%;
+    height: 120rem;
     border-radius: 15px 0px 0px 15px;
     direction: rtl;
     /* position: fixed; */
     background: var(--bg-primary);
-    transition: width 250ms ease-out;
+    transition: width 0.3s ease-out ;
 }
 
 .sidebar-nav {
@@ -51,12 +57,14 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    
 
 }
 
 .side-item {
     width: 100%;
     margin: 1rem 0;
+    
 }
 
 .side-item:last-child {
@@ -97,6 +105,11 @@ main {
     border-radius: 5px;
 }
 
+.side-link:hover svg{
+    fill: black;
+    
+}
+
 .side-link-logo:hover {
     color: var(--text-secondary);
     text-decoration: none;
@@ -117,15 +130,17 @@ main {
 }
 
 .side-link svg {
-    width: 4rem;
+    fill: white;
+    width: 3rem;
     margin: 0 2rem;
     padding: 10px;
+
+
 }
 
 .side-link-active svg {
-    width: 4rem;
+    fill: var(--bg-primary);
     margin: 0 2rem;
-    padding: 10px;
     color: var(--bg-primary);
     background: white;
     border-radius: 10px;
@@ -139,6 +154,7 @@ main {
 .sidebar:hover .link-text {
     display: block;
 }
+
 
 .fa-primary {
     color: #ff7eee;
@@ -211,7 +227,7 @@ main {
     .sidebar {
         top: 0;
         width: 7rem;
-        height: 98%;
+        height: 98vh;
     }
 
     .sidebar:hover {
@@ -223,3 +239,4 @@ main {
         transition: opacity var(--transition-speed);
     }
 }
+
