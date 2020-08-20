@@ -3,6 +3,7 @@ $('#progressbar-1').LineProgressbar({
     fillBackgroundColor: "#9f6ff8",
     radius:"10px",
     height:"7px",
+    ShowProgressCount:false,
 });
 
 $('#progressbar-2').LineProgressbar({
@@ -10,6 +11,7 @@ $('#progressbar-2').LineProgressbar({
     fillBackgroundColor: "#9f6ff8",
     radius: "10px",
     height: "7px",
+    ShowProgressCount:false,
 });
 
 
@@ -18,5 +20,6 @@ $('#progressbar-3').LineProgressbar({
     fillBackgroundColor: "#9f6ff8",
     radius: "10px",
     height: "7px",
+    ShowProgressCount:false,
 });
 
