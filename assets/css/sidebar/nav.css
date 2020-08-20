@@ -7,8 +7,6 @@
     --bg-secondary: rgb(235, 225, 255);
 }
 
-<<<<<<< HEAD
-=======
 body {
     color: black;
     background-color: #f3f3f3;
@@ -28,7 +26,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
->>>>>>> origin/book-content
 
 main {
     right: 0;
