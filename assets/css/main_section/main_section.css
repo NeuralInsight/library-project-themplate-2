@@ -1,3 +1,15 @@
+ a {
+    color: #636363;
+    text-decoration: none;
+ }
+
+
+ a:hover {
+    color: #636363;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
 .main-contant {
    height: 100vw;
    margin: 0rem;
@@ -16,17 +28,17 @@
    background-color: white;
    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
-   padding: 0.5rem 1rem;
+   padding: 1rem 1rem;
    border-top-left-radius: 0.8rem;
    border-top-right-radius: 0.8rem;
    border-bottom-left-radius: 3px;
    border-bottom-right-radius: 3px;
 }
 #content-header-p-writers {
-   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
    margin: 0.05rem 0rem;
 }
-.header-titel h4 {
+.header-title h4 {
    margin: 0;
 }
 .header-btn {
@@ -180,10 +192,10 @@
 }
 .p-writer {
    background-color: white;
-   padding: 0.5rem;
+   padding: 1rem;
    display: flex;
    flex-direction: row;
-   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
    align-items: center;
    margin: 0.05rem 0rem;
    border-radius: 3px;
@@ -196,6 +208,7 @@
    border-bottom-right-radius: 0.8rem;
 }
 .p-writer:hover {
+   z-index: 100;
    margin: 0rem -0.8rem;
    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -267,4 +280,20 @@
 }
 
 .left-div {
+}
+
+.header-btn-icon {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.2rem;
+
+}
+
+
+.header-btn-icon svg{
+   fill: #636363;
+   width: 1.2rem;
+   margin: 0.7rem;
 }
