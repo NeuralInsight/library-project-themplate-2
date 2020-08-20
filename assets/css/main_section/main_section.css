@@ -1,3 +1,15 @@
+ a {
+    color: #636363;
+    text-decoration: none;
+ }
+
+
+ a:hover {
+    color: #636363;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
 .main-contant {
    height: 100vw;
    margin: 0rem;
@@ -267,4 +279,20 @@
 }
 
 .left-div {
+}
+
+.header-btn-icon {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.2rem;
+
+}
+
+
+.header-btn-icon svg{
+   fill: #636363;
+   width: 1.2rem;
+   margin: 0.7rem;
 }
