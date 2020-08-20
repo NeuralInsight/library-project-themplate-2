@@ -6,6 +6,7 @@
 
 body {
     color: black;
+    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     position: relative;
@@ -21,4 +22,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #6649b8;
+}
+
+main {
+    right: 0;
+    margin-left: 5rem;
+    padding: 1rem
 }
