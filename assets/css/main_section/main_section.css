@@ -311,10 +311,3 @@
    padding: 1rem;
    border-radius: 10px;
 }
-.r-book-p-bar{
-   display: flex;
-   flex-direction: row;
-}
-.percentCount{
-   display: flex;
-}
