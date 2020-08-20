@@ -1,0 +1,14 @@
+
+.tippy-box[data-theme~='gradient'] {
+    background: linear-gradient(190deg, rgba(86, 79, 255, 1) 0%, rgba(86, 42, 252, 1) 0%, rgba(188, 36, 255, 1) 100%);
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+
+.tippy-box[data-theme~='gradient'] a{
+    text-decoration: none;
+    color: white;
+}
