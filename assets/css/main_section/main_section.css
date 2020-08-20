@@ -247,6 +247,7 @@
    display: flex;
    align-items: center;
    /* justify-content: space-between; */
+   margin-bottom: 1rem
 }
 .reading-book:last-child {
    border-bottom-left-radius: 0.8rem;
@@ -255,18 +256,22 @@
 .r-book-img {
 }
 .r-book-img img {
-   max-width: 4rem;
+   max-width: 5rem;
    height: auto;
 }
 .r-book-info {
    display: flex;
    flex-direction: column;
    justify-items: flex-end;
-   margin-left: 1rem;
+   margin-right: 1rem;
    flex-basis: 90%;
 }
 .r-book-info p {
    font-size: 1rem;
+   
+}
+.r-book-name{
+   align-self: start;
 }
 .r-book-w-p {
    display: flex;
@@ -304,4 +309,12 @@
    flex-flow: column nowrap;
    background-color: white;
    padding: 1rem;
+   border-radius: 10px;
+}
+.r-book-p-bar{
+   display: flex;
+   flex-direction: row;
+}
+.percentCount{
+   display: flex;
 }

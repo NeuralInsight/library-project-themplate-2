@@ -1,0 +1,148 @@
+header{
+    width: calc(100vw - 7rem);
+    height: 7rem;
+    /* background: #b6b6b6; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    padding: 1rem 3rem;
+}
+
+.item_container{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.profile_item{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.profile_img{
+    /* background-color: aquamarine; */
+}
+.profile_img img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.profile_title{
+    font-weight: 900;
+    margin: 0 1rem;
+}
+
+.tools_item{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.tools_notify{
+    fill:rgb(104, 104, 104);
+    width: 1.7rem;
+    margin-right: 1rem;
+}
+
+.tools_notify svg{
+    fill: rgb(104, 104, 104);
+
+}
+
+.tools_notify:hover svg {
+    fill: rgb(148, 94, 248);
+
+}
+
+
+
+.tools_settings {
+    
+    width: 1.7rem;
+}
+
+.tools_settings svg{
+    fill:rgb(104, 104, 104);
+}
+
+.tools_settings:hover svg{
+    fill: rgb(159, 111, 248);
+}
+
+.search_box {
+    /* background: #057dce; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+
+.search_form{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    direction: rtl;    
+}
+
+.search_box span{
+    margin-left: 2rem;
+    color: rgb(136, 136, 136);
+}
+
+input[type=search]{
+    direction: rtl;
+    text-align: right;
+    width: 40rem;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    transition: 0.3s ease-in;
+    background-color: #f3f3f3;
+}
+
+input[type=search]:focus {
+    color: rgb(159, 111, 248);
+    border-bottom: 1.5px solid rgb(159, 111, 248);
+}
+
+.btn_p_sm{
+    background: white;
+    fill: rgb(159, 111, 248);
+    width: 4.5rem;
+    padding: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.137);
+    transition: 0.5s ease-out;
+}
+
+.btn_p_sm:hover {
+
+    box-shadow: 5px 5px 60px 5px rgba(0, 0, 0, 0.171);
+}
+
+.btn_p_sm:focus {
+    background: rgb(245, 239, 255);
+    outline: none;
+}
+
+.drop_theme{
+    width: 3rem;
+    background-color: red;
+}
+
+.drop_theme > a{
+    list-style: none;
+    text-decoration: none;
+}
