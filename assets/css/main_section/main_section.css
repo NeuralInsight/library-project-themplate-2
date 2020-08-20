@@ -11,7 +11,6 @@
  }
 
 .main-contant {
-   height: 100vw;
    margin: 0rem;
    margin-right: 10rem;
    padding: 0;
@@ -29,10 +28,10 @@
    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
    padding: 1rem 1rem;
-   border-top-left-radius: 0.8rem;
+   /* border-top-left-radius: 0.8rem;
    border-top-right-radius: 0.8rem;
    border-bottom-left-radius: 3px;
-   border-bottom-right-radius: 3px;
+   border-bottom-right-radius: 3px; */
 }
 #content-header-p-writers {
    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
@@ -185,6 +184,10 @@
 }
 .content_container {
    flex-basis: 63%;
+   background-color: white;
+   border-radius: 8px;
+   padding: 10px;
+
 }
 .p-writers-col {
    /* background-color: teal; */
@@ -204,10 +207,7 @@
    direction: rtl;
    text-align: right;
 }
-.p-writer:last-child {
-   border-bottom-left-radius: 0.8rem;
-   border-bottom-right-radius: 0.8rem;
-}
+
 .p-writer:hover {
    z-index: 100;
    margin: 0rem -0.8rem;
@@ -248,6 +248,7 @@
    align-items: center;
    margin-bottom:1rem ;
    /* justify-content: space-between; */
+   margin-bottom: 1rem
 }
 .reading-book:last-child {
    border-bottom-left-radius: 0.8rem;
@@ -272,6 +273,10 @@
 }
 .r-book-info p {
    font-size: 1rem;
+   
+}
+.r-book-name{
+   align-self: start;
 }
 .r-book-w-p {
    display: flex;
