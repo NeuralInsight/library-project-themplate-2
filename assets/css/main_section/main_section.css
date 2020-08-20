@@ -24,7 +24,7 @@
 .my-books {
    border-radius: 8px;
 }
-.content-header {
+.content_header {
    background-color: white;
    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; */
@@ -38,7 +38,7 @@
    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
    margin: 0.05rem 0rem;
 }
-.header-title h4 {
+.content_header-title h4 {
    margin: 0;
 }
 .header-btn {
@@ -173,6 +173,7 @@
 #p-writers-and-reding {
    margin-top: 2rem;
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
 }
 .popular-writers {
@@ -182,7 +183,7 @@
    border-bottom-left-radius: 3px;
    border-bottom-right-radius: 3px;
 }
-.readding-books {
+.content_container {
    flex-basis: 63%;
 }
 .p-writers-col {
@@ -246,7 +247,6 @@
    display: flex;
    align-items: center;
    /* justify-content: space-between; */
-   padding: 1rem;
 }
 .reading-book:last-child {
    border-bottom-left-radius: 0.8rem;
@@ -296,4 +296,13 @@
    fill: #636363;
    width: 1.2rem;
    margin: 0.7rem;
+}
+
+.content_body{
+   display: flex;
+   direction: rtl;
+   flex-flow: column nowrap;
+   background-color: white;
+   padding: 1rem;
+   border-radius: 10px;
 }

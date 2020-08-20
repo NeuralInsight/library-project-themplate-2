@@ -13,12 +13,10 @@
     <link rel="stylesheet" type="text/css" href="./PlugIn/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="./assets/css/tippy/tippy.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lineprogress/jquery.lineProgressbar.css" />
   <script src="https://kit.fontawesome.com/00f529052d.js" crossorigin="anonymous"></script>
 <title>Library | Home</title>
-
   
-    
-    <title>Library | Home</title>
 </head>
 
 <body>
@@ -511,7 +509,7 @@
                 <span>More</span>
               </a>
             </div>
-            <div class="header-title p-2">
+            <div class="header_title p-2">
               <h4>My Book</h4>
             </div>
           </div>
@@ -601,7 +599,7 @@
         </div>
         <div id="p-writers-and-reding">
           <div class="popular-writers">
-            <div class="content-header d-flex justify-content-between align-items-center" id="content-header-p-writers">
+            <div class="content_header d-flex justify-content-between align-items-center" id="content_header-p-writers">
               <div class="header-btn p-2">
                 <a href="#" class="header-btn-icon">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -694,8 +692,8 @@
             </div>
           </div>
 
-          <div class="readding-books">
-            <div class="content-header d-flex justify-content-between align-items-center">
+          <div id="readding-books" class="content_container">
+            <div class="content_header d-flex justify-content-between align-items-center">
               <div class="header-btn p-2">
                 <a href="#" class="header-btn-icon">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -742,11 +740,11 @@
                 <span>More</span>
                 </a>
               </div>
-              <div class="header-title p-2">
+              <div class="content_header-title p-2">
                 <h4>Keep Reading</h4>
               </div>
             </div>
-
+            <div class="content_body">
             <div class="reading-book">
                   <div class="r-book-img">
                     <img class="rounded" src="./test_image/04.jpg" />
@@ -765,7 +763,7 @@
 
                   </div>
                   <div class="r-book-p-bar">
-                    <p>.............................................................................</p>
+                    <div id="progressbar-1"></div>
                   </div>
                   </div>
             </div>
@@ -789,7 +787,7 @@
 
               </div>
               <div class="r-book-p-bar">
-                <p>...........................</p>
+                <div id="progressbar-2"></div>
               </div>
             </div>
             </div>
@@ -810,11 +808,12 @@
               </div>
             </div>
             <div class="r-book-p-bar">
-              <p>......................................................</p>
+              <div id="progressbar-3"></div>
             </div>
             </div>
           </div>
 
+        </div>
         </div>
       </div>
       </div>
@@ -824,6 +823,8 @@
   </main>
 
 <script type="text/javascript" src="./assets/js/jQuery/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/lineprogress/jquery.lineProgressbar.js"></script>
+<script type="text/javascript" src="./assets/js/lineprogress/main.js"></script>
 <script type="text/javascript" src="./PlugIn/slick-1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="./assets/js/book-content/book-content.js"></script>
 <script src="./assets/js/bootstrap/bootstrap.js"></script>
@@ -831,7 +832,6 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="./assets/js/tippy/tippy.js"></script>
-
 </body>
 
 </html>
