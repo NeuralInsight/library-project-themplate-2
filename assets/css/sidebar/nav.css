@@ -115,7 +115,7 @@
 
 .side-button:hover {
     background-color: white;
-    fill: balck;
+    fill: black;
     margin: 0 -2rem;
     margin-right: 1rem;
     border-radius: 10px;
@@ -146,20 +146,20 @@
     transition: 0.33s ease;
 }
 
-.side-button.facebook::before {
-    content: "Facebook";
+.side-button.popular::before {
+    content: "Popular";
 }
 
-.side-button.facebook:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Facebook-128.png") no-repeat center;
+.side-button.popular:after {
+    background: url("../../../img/icons/star.svg") no-repeat center;
 }
 
-.side-button.twitter::before {
-    content: "Twitter";
+.side-button.favorite::before {
+    content: "Favorite";
 }
 
-.side-button.twitter:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png") no-repeat center;
+.side-button.favorite:after {
+    background: url("../../../img/icons/heart.svg") no-repeat center;
 }
 
 .side-button.instagram::before {
