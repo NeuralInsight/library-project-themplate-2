@@ -135,10 +135,10 @@
 .side-button::after {
     content: "";
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 2rem;
+    width: 2rem;
     top: 50%;
-    right: 2rem;
+    right: 2.5rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background-size: cover !important;
@@ -162,36 +162,36 @@
     background: url("../../../img/icons/heart.svg") no-repeat center;
 }
 
-.side-button.instagram::before {
-    content: "Instagram";
+.side-button.calender::before {
+    content: "Calender";
 }
 
-.side-button.instagram:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Instagram-128.png") no-repeat center;
+.side-button.calender:after {
+    background: url("../../../img/icons/calendar.svg") no-repeat center;
 }
 
-.side-button.soundcloud::before {
-    content: "Soundcloud";
+.side-button.audiobook::before {
+    content: "Audio Book";
 }
 
-.side-button.soundcloud:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_SoundCloud-128.png") no-repeat center;
+.side-button.audiobook:after {
+    background: url("../../../img/icons/audio-book.svg") no-repeat center;
 }
 
-.side-button.linked-in::before {
-    content: "LinkedIn";
+.side-button.bookmark::before {
+    content: "Bookmark";
 }
 
-.side-button.linked-in:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png") no-repeat center;
+.side-button.bookmark:after {
+    background: url("../../../img/icons/bookmark.svg") no-repeat center;
 }
 
-.side-button.pinterest::before {
-    content: "Pinterest";
+.side-button.log-in-out::before {
+    content: "Log Out";
 }
 
-.side-button.pinterest:after {
-    background: url("https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png") no-repeat center;
+.side-button.log-in-out:after {
+    background: url("../../../img/icons/logout.svg") no-repeat center;
 }
 
 .plus-button {
