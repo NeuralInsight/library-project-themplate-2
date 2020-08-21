@@ -41,6 +41,10 @@
     transition: 0.33s ease;
 }
 
+.side-bar a{
+    color: #ffffff;
+}
+
 .side-bar:hover {
     width: 300px;
 }
