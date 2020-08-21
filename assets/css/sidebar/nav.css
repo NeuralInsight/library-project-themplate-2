@@ -14,12 +14,7 @@
     transition: 0.33s ease;
 }
 
-.sidebar-wrapper{
-    background: blue;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-}
+
 
 .rela-block {
     display: block;
@@ -30,8 +25,8 @@
 .side-bar {
     z-index: 100;
     position: fixed;
-    height: 98%;
     width: 7rem;
+    height: 100%;
     /* top: 0;
     bottom: 0; */
     right: 0;
@@ -47,7 +42,7 @@
 }
 
 .side-bar:hover {
-    width: 250px;
+    width: 300px;
 }
 
 .side-bar:hover .side-button::before {
@@ -102,12 +97,25 @@
 .side-button {
     height: 15%;
     margin: 5px 0;
-    background-color: #e4e9e9;
+    fill: white;
+    cursor: pointer;
+}
+
+.side-button:last-child {
+    height: 15%;
+    margin: 5px 0;
+    bottom: 0;
+    fill: white;
     cursor: pointer;
 }
 
 .side-button:hover {
-    background-color: #c4c9c9;
+    background-color: white;
+    fill: balck;
+    margin: 0 -2rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    box-shadow: -3px 2px 30px 4px rgba(0, 0, 0, 0.4);
 }
 
 .side-button::before {
@@ -126,7 +134,7 @@
     height: 40px;
     width: 40px;
     top: 50%;
-    right: 20px;
+    right: 2rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background-size: cover !important;
