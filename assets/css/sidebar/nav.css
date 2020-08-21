@@ -1,3 +1,12 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #ffffff;
+    --text-secondary: #000000;
+    --bg-primary: #9f6ff8;
+    --bg-secondary: rgb(235, 225, 255);
+}
+
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 * {
@@ -5,8 +14,11 @@
     transition: 0.33s ease;
 }
 
-body {
-    background-color: #9ab;
+.sidebar-wrapper{
+    background: blue;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
 }
 
 .rela-block {
@@ -18,12 +30,12 @@ body {
 .side-bar {
     z-index: 100;
     position: fixed;
-    width: 80px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 4px 0px 25px -1px rgba(0, 0, 0, 0.5);
+    height: 98%;
+    width: 7rem;
+    /* top: 0;
+    bottom: 0; */
+    right: 0;
+    background-color: var(--bg-primary);
     font-family: "Raleway";
     font-weight: 600;
     font-size: 18px;
