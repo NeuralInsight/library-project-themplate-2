@@ -56,8 +56,8 @@
 }
 
 .side-bar:hover .hover-svg {
-    height: 130px;
-    width: 130px;
+    height: 260px;
+    width: 260px;
 }
 
 .side-container {
@@ -84,8 +84,8 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
     fill: none;
     stroke: rgba(0, 0, 0, 0.5);
     stroke-width: 2;
