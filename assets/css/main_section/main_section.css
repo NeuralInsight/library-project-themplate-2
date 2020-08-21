@@ -17,6 +17,8 @@ a:hover {
 }
 
 .right-div {
+   display: flex;
+   flex-direction: column;
    padding: 0.5rem;
 }
 .my-books {
@@ -195,7 +197,7 @@ a:hover {
    background-color: #a6ecd7;
 }
 
-#p-writers-and-reding {
+#p-writers-and-reading {
    margin-top: 1rem;
    display: flex;
    flex-direction: row;
