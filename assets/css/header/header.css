@@ -23,11 +23,14 @@ header{
     align-items: center;
 }
 .profile_img{
-    /* background-color: aquamarine; */
+    
 }
 .profile_img img{
     width: 4rem;
     border-radius: 50%;
+}
+.profile_img img:hover{
+    box-shadow: 0 0rem .8rem .3rem rgba(199, 80, 255, 0.25);
 }
 
 .profile_title{
