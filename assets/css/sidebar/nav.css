@@ -1,314 +1,214 @@
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    --text-primary: #ffffff;
-    --text-secondary: #000000;
-    --bg-primary: #9f6ff8;
-    --bg-secondary: rgb(235, 225, 255);
+   font-size: 16px;
+   font-family: "Open Sans";
+   --text-primary: #ffffff;
+   --text-secondary: #000000;
+   --bg-primary: rgb(159, 111, 248);
+   --bg-secondary: rgb(235, 225, 255);
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-* {
-    -webkit-transition: 0.33s ease;
-    transition: 0.33s ease;
+.sidebar-wrapper {
+   height: 100vh;
+   width: 7rem;
+   right: 0;
+   direction: rtl;
+   display: flex;
+   position: fixed;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 1;
 }
 
-
-
-.rela-block {
-    display: block;
-    position: relative;
-    overflow: hidden;
+.side-item-wrapper {
+   height: 100%;
+   width: 100%;
+   padding-top: 7.5rem;
+   -webkit-transition: none;
+   -moz-transition: none;
+   -o-transition: none;
+   -ms-transition: none;
+   transition: none;
+}
+.sidebar {
+   width: 6rem;
+   height: 120rem;
+   border-radius: 15px 0px 0px 15px;
+   direction: rtl;
+   /* position: fixed; */
+   background: var(--bg-primary);
+   transition: width 0.3s ease-out;
 }
 
-.side-bar {
-    z-index: 100;
-    position: fixed;
-    width: 7rem;
-    height: 100%;
-    /* top: 0;
-    bottom: 0; */
-    right: 0;
-    background-color: var(--bg-primary);
-    font-family: "Raleway";
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    -webkit-transition: 0.33s ease;
-    transition: 0.33s ease;
+.sidebar-nav {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
 }
 
-.side-bar a{
-    color: #ffffff;
+.side-item {
+   width: 100%;
+   margin: 1rem 0;
 }
 
-.side-bar:hover {
-    width: 300px;
+.side-item:last-child {
+   margin-top: auto;
 }
 
-.side-bar:hover .side-button::before {
-    left: 6%;
-    -webkit-transition: 0.33s ease, left 0.25s 0.15s ease;
-    transition: 0.33s ease, left 0.25s 0.15s ease;
+.side-link {
+   display: flex;
+   align-items: center;
+   height: 5rem;
+   color: white;
+   transition: ease-out 500ms;
 }
 
-.side-bar:hover .hover-svg {
-    height: 260px;
-    width: 260px;
+.side-link-logo {
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   height: 5rem;
+   color: white;
+   transition: ease-out 500ms;
 }
 
-.side-container {
-    position: absolute;
-    width: 100%;
+.side-link-logo svg {
+   width: 2rem;
+   margin: 0 2rem;
 }
 
-.side-container.top {
-    height: 20%;
-    top: 1%;
+.side-link:hover {
+   background: var(--bg-secondary);
+   color: var(--text-secondary);
+   text-decoration: none;
+   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+   margin-right: 20px;
+   margin-left: -20px;
+   z-index: 10;
+   border-radius: 5px;
 }
 
-.side-container.middle {
-    padding-top: 10px;
-    height: 65%;
-    top: 55%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.side-link:hover svg {
+   fill: black;
 }
 
-.hover-svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 150px;
-    width: 150px;
-    fill: none;
-    stroke: rgba(0, 0, 0, 0.5);
-    stroke-width: 2;
-    cursor: pointer;
-    -webkit-transition: 0s ease, height 0.33s ease, width 0.33s ease;
-    transition: 0s ease, height 0.33s ease, width 0.33s ease;
+.side-link-logo:hover {
+   color: var(--text-secondary);
+   text-decoration: none;
+   margin-right: 20px;
+   z-index: 10;
+   border-radius: 5px;
 }
 
-.hover-svg:hover {
-    stroke: #000;
+.link-text {
+   display: none;
+   margin-left: 1rem;
+   position: relative;
+   white-space: nowrap;
+}
+/* .link-text a{
+    display: none;
+    margin-left: 1rem;
+
+} */
+.sidebar:hover .link-text {
+   display: block;
 }
 
-.side-button {
-    height: 15%;
-    margin: 5px 0;
-    fill: white;
-    cursor: pointer;
+.side-link svg {
+   fill: white;
+   width: 3rem;
+   margin: 0 2rem;
+   padding: 10px;
 }
 
-.side-button:last-child {
-    height: 15%;
-    margin: 5px 0;
-    bottom: 0;
-    fill: white;
-    cursor: pointer;
+.side-link-active svg {
+   fill: var(--bg-primary);
+   margin: 0 2rem;
+   color: var(--bg-primary);
+   background: white;
+   border-radius: 10px;
 }
 
-.side-button:hover {
-    background-color: white;
-    fill: black;
-    margin: 0 -2rem;
-    margin-right: 1rem;
-    border-radius: 10px;
-    box-shadow: -3px 2px 30px 4px rgba(0, 0, 0, 0.4);
+.sidebar:hover {
+   width: 16rem;
 }
 
-.side-button::before {
-    position: absolute;
-    top: 50%;
-    left: -250px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: 0.33s ease;
-    transition: 0.33s ease;
+.fa-primary {
+   color: #ff7eee;
 }
 
-.side-button::after {
-    content: "";
-    position: absolute;
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    right: 2.5rem;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-size: cover !important;
-    -webkit-transition: 0.33s ease;
-    transition: 0.33s ease;
+.fa-secondary {
+   color: #ff7eee;
 }
 
-.side-button.popular::before {
-    content: "Popular";
+.fa-primary,
+.fa-secondary {
+   transition: var(--transition-speed);
 }
 
-.side-button.popular:after {
-    background: url("../../../img/icons/star.svg") no-repeat center;
+.logo {
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+   text-align: center;
+   color: var(--text-secondary);
+   border-radius: 12px;
+   background-color: var(--bg-primary);
+   font-size: 1.5rem;
+   letter-spacing: 0.3ch;
+   width: 100%;
 }
 
-.side-button.favorite::before {
-    content: "Favorite";
+.logo svg {
+   transform: rotate(180deg);
+   transition: 200ms ease;
 }
 
-.side-button.favorite:after {
-    background: url("../../../img/icons/heart.svg") no-repeat center;
+.sidebar:hover .logo svg {
+   transform: rotate(0deg);
 }
 
-.side-button.calender::before {
-    content: "Calender";
+@media only screen and (max-width: 600px) {
+   .sidebar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+   }
+
+   .logo {
+      display: none;
+   }
+
+   .sidebar-nav {
+      flex-direction: row;
+   }
+
+   .side-link {
+      justify-content: center;
+   }
+
+   main {
+      margin: 0;
+   }
 }
 
-.side-button.calender:after {
-    background: url("../../../img/icons/calendar.svg") no-repeat center;
-}
+@media only screen and (min-width: 600px) {
+   .sidebar {
+      top: 0;
+      width: 7rem;
+      height: 98vh;
+   }
 
-.side-button.audiobook::before {
-    content: "Audio Book";
-}
+   .sidebar:hover {
+      width: 16rem;
+   }
 
-.side-button.audiobook:after {
-    background: url("../../../img/icons/audio-book.svg") no-repeat center;
-}
-
-.side-button.bookmark::before {
-    content: "Bookmark";
-}
-
-.side-button.bookmark:after {
-    background: url("../../../img/icons/bookmark.svg") no-repeat center;
-}
-
-.side-button.log-in-out::before {
-    content: "Log Out";
-}
-
-.side-button.log-in-out:after {
-    background: url("../../../img/icons/logout.svg") no-repeat center;
-}
-
-.plus-button {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    height: 75px;
-    width: 75px;
-    border-radius: 100%;
-    background-color: #e91e63;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.58);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: scale(0.92);
-    transform: scale(0.92);
-}
-
-.plus-button::before {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.plus-button:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.5);
-}
-
-.plus-button:active {
-    -webkit-transform: scale(0.96);
-    transform: scale(0.96);
-    box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, 0.53);
-}
-
-.plus-button.open {
-    -webkit-transform: rotate(45deg) scale(0.92);
-    transform: rotate(45deg) scale(0.92);
-    background-color: #333;
-    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.58);
-}
-
-.plus-button.open:hover {
-    -webkit-transform: scale(1) rotate(45deg);
-    transform: scale(1) rotate(45deg);
-    box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.5);
-}
-
-.plus-button.open:active {
-    -webkit-transform: scale(0.96) rotate(45deg);
-    transform: scale(0.96) rotate(45deg);
-    box-shadow: 2px 3px 11px 1px rgba(0, 0, 0, 0.53);
-}
-
-.social-button {
-    position: absolute;
-    bottom: 43px;
-    right: 41px;
-    height: 50px;
-    width: 50px;
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    background-size: 153% !important;
-    border-radius: 100%;
-    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    z-index: 99;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.social-button:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.35s cubic-bezier(0.3, 0.2, 0, 2.5);
-    transition: 0.35s cubic-bezier(0.3, 0.2, 0, 2.5);
-}
-
-.social-button.twitter-button {
-    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/twitter-256.png") no-repeat center;
-}
-
-.social-button.twitter-button.active {
-    bottom: 110px;
-    right: 21px;
-}
-
-.social-button.facebook-button {
-    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/facebook-256.png") no-repeat center;
-}
-
-.social-button.facebook-button.active {
-    bottom: 105px;
-    right: 73px;
-}
-
-.social-button.pinterest-button {
-    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/pinterest-256.png") no-repeat center;
-}
-
-.social-button.pinterest-button.active {
-    bottom: 67px;
-    right: 109px;
-}
-
-.social-button.insta-button {
-    background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/instagram-256.png") no-repeat center;
-}
-
-.social-button.insta-button.active {
-    bottom: 15px;
-    right: 105px;
+   .sidebar:hover .link-text {
+      display: inline;
+      transition: opacity var(--transition-speed);
+   }
 }
