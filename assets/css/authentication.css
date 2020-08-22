@@ -12,9 +12,17 @@
     position: fixed;
     width: 85vw;
     height: 85vh;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.822);
+
     border-radius: 20px;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    backdrop-filter:blur(100px);
+    -webkit-backdrop-filter:blur(100px);
+} 
+
+
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+    .backdrop-blur {
+        background-color: rgba(255, 255, 255, .5);
+        -webkit-backdrop-filter: blur(2em);
+        backdrop-filter: blur(2em);
+    }
 }
