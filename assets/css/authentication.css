@@ -12,11 +12,22 @@
     position: fixed;
     width: 85vw;
     height: 85vh;
-
     border-radius: 20px;
     backdrop-filter:blur(100px);
     -webkit-backdrop-filter:blur(100px);
-} 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.main-sec{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    background-color: white;
+    
+}
 
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
