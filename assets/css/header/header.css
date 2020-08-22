@@ -102,6 +102,27 @@ header{
     color: rgb(136, 136, 136);
 }
 
+.search-input{
+    position: relative;
+}
+
+.spin{
+    width: 0%;
+    margin-right: 1rem !important;
+    /* width: 40rem; */
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: rgb(169, 122, 255);
+    /* transition: 0.5s ease-out; */
+}
+.spin {
+	transition: 700ms cubic-bezier(0.4, 0, 0.2, 1) ;
+	-webkit-transition: 700ms cubic-bezier(0.4, 0, 0.2, 1) ;
+	-ms-transition: 700ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
 input[type=search]{
     direction: rtl;
     text-align: right;
@@ -111,15 +132,11 @@ input[type=search]{
     padding: 1rem;
     border: 0;
     outline: none;
-    border-bottom: 1px solid rgb(179, 179, 179);
-    transition: 0.3s ease-in;
+    border-bottom: 2px solid rgb(179, 179, 179);
     background-color: #f3f3f3;
+    color: rgb(159, 111, 248);
 }
 
-input[type=search]:focus {
-    color: rgb(159, 111, 248);
-    border-bottom: 1.5px solid rgb(159, 111, 248);
-}
 
 .btn_p_sm{
     background: white;
@@ -131,6 +148,7 @@ input[type=search]:focus {
     border-radius: 15px;
     box-shadow: 0 0 100px 5px rgba(0, 0, 0, 0.137);
     transition: 0.5s ease-out;
+    z-index: 1; /*This line will cause problems soon.*/
 }
 
 .btn_p_sm:hover {
