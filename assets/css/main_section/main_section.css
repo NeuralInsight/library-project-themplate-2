@@ -13,9 +13,9 @@ a:hover {
    flex-direction: row;
 }
 .main-content {
-   height: calc(100vh - 10rem);
+   height: calc(100vh - 7rem);
    margin: 0rem;
-   margin-right: 10rem;
+   margin-right: 7rem;
    padding: 0;
 }
 
@@ -325,6 +325,7 @@ a:hover {
    display: flex;
    justify-content: space-between;
    margin-bottom: 1rem;
+   color: gray;
 }
 .r-book-w p {
    margin: 0;
@@ -368,14 +369,13 @@ a:hover {
 .info-card-icon {
    position: relative;
    display: flex;
-   background-color: #e1d1ff;
    border-radius: 50%;
    padding: 1rem;
 }
 .info-card-icon svg{
    height: 1.5vw;
    width: 1.5vw;
-   fill: var(--bg-primary);
+   
 
 }
 .info-card-info{
@@ -387,4 +387,29 @@ a:hover {
    color: gray;
    white-space: nowrap;
    
+}
+#read-books svg{
+   fill: var(--bg-primary);
+}
+#read-books .info-card-icon{
+   background-color: #e1d1ff;
+}
+#read-authors svg{
+   fill:	#46c9ff;
+}
+
+#read-authors .info-card-icon{
+   background-color: #e0f3ff;
+}
+#are-read svg{
+   fill: #3ce3b2;
+}
+#are-read .info-card-icon{
+   background-color:#e6faf4;
+}
+#book-pages svg{
+   fill: #fd9a68;
+}
+#book-pages .info-card-icon{
+   background-color:	#fbe3d7;
 }
