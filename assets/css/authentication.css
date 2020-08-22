@@ -16,8 +16,9 @@
     backdrop-filter:blur(100px);
     -webkit-backdrop-filter:blur(100px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .main-sec{
@@ -27,6 +28,22 @@
     right: 0;
     background-color: white;
     
+}
+
+.anim-sec{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-anim{
+    position: relative;
+    width: 100%;
 }
 
 
