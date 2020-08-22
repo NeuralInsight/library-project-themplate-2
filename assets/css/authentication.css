@@ -42,6 +42,7 @@
 }
 
 .login-anim{
+    bottom: 5%;
     position: relative;
     width: 120%;
 }
