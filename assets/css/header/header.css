@@ -28,6 +28,7 @@ header{
 .profile_img img{
     width: 4rem;
     border-radius: 50%;
+    transition: 200ms ease-in-out;
 }
 .profile_img img:hover{
     box-shadow: 0 0rem .8rem .3rem rgba(199, 80, 255, 0.25);
@@ -37,7 +38,9 @@ header{
     font-weight: 900;
     margin: 0 1rem;
 }
-
+.profile_title a{
+    color: black;
+}
 .tools_item{
     /* background-color: red; */
     display: flex;
