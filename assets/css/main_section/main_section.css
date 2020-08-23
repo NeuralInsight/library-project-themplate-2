@@ -245,6 +245,8 @@ a:hover {
    transition: 150ms ease-out;
    direction: rtl;
    text-align: right;
+   justify-content: space-between;
+   
 }
 .p-writer:last-child {
    border-bottom-left-radius: 0.8rem;
@@ -262,7 +264,8 @@ a:hover {
    align-items: center;
 }
 .p-writer-info img {
-   width: 20%;
+   height: 3.5rem;
+   width: 3.5rem;
    border: 3px solid white;
    border-radius: 14px;
    object-fit: cover;
@@ -380,6 +383,9 @@ a:hover {
 }
 .info-card-info{
    margin-left: .5rem;
+}
+.info-card-info-number h6{
+   color: black;
 }
 .info-card-info-text p{
    margin: 0;
