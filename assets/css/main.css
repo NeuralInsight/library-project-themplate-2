@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
+@font-face{
+    font-family: "Vazir";
+    src: url('../fonts/vazir/Vazir.woff2') format('woff2'),
+         url('../fonts/vazir/Vazir.woff') format('woff'),
+         url('../fonts/vazir/Vazir.ttf') format('truetype');
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Salsa', cursive;
+    font-family: 'Vazir'
 }
 
 body {
