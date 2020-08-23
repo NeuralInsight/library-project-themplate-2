@@ -37,18 +37,18 @@
     width: 40%;
     height: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 
 }
 
 .login-anim{
-    bottom: 5%;
+    bottom: 15%;
     position: relative;
     width: 120%;
-    height: 90%;
+    height: 100%;
 }
 
 .anim-sec-top{
