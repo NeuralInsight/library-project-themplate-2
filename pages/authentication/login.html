@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,55 +10,72 @@
     <script src="https://kit.fontawesome.com/00f529052d.js" crossorigin="anonymous"></script>
     <title>کتابخونه | ورود</title>
 </head>
+
 <body>
     <section class="background">
         <section class="blur-sec">
             <div class="main-sec">
-                    <form class="login100-form validate-form">
-                        <span class="login100-form-title p-b-43">
-                            با لبخند وارد شوید!!!
-                        </span>
+                <div class="materialContainer">
 
 
-                        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="email">
-                            <span class="focus-input100"></span>
-                            <span class="label-input100">ایمیل</span>
+                    <div class="box">
+
+                        <div class="title">ورود</div>
+
+                        <div class="input">
+                            <label for="name">نام کاربری</label>
+                            <input type="text" name="name" id="name">
+                            <span class="spin"></span>
+                        </div>
+
+                        <div class="input">
+                            <label for="pass">رمز عبور</label>
+                            <input type="password" name="pass" id="pass">
+                            <span class="spin"></span>
+                        </div>
+
+                        <div class="button login">
+                            <button><span>ورود</span> <i class="fa fa-check"></i></button>
+                        </div>
+
+                        <a href="" class="pass-forgot">برای ورود مشکلی دارید ؟</a>
+
+                    </div>
+
+                    <div class="overbox">
+                        <div class="material-button alt-2"><span class="shape"></span></div>
+
+                        <div class="title">ایجاد حساب</div>
+
+                        <div class="input">
+                            <label for="regname">نام کاربری</label>
+                            <input type="text" name="regname" id="regname">
+                            <span class="spin"></span>
+                        </div>
+
+                        <div class="input">
+                            <label for="regpass">رمز عبور</label>
+                            <input type="password" name="regpass" id="regpass">
+                            <span class="spin"></span>
+                        </div>
+
+                        <div class="input">
+                            <label for="reregpass">تکرار رمز عبور</label>
+                            <input type="password" name="reregpass" id="reregpass">
+                            <span class="spin"></span>
+                        </div>
+
+                        <div class="button">
+                            <button><span>بعدی</span></button>
                         </div>
 
 
-                        <div class="wrap-input100 validate-input" data-validate="Password is required">
-                            <input class="input100" type="password" name="pass">
-                            <span class="focus-input100"></span>
-                            <span class="label-input100">کلمه عبور</span>
-                        </div>
+                    </div>
 
-                        <div class="flex-sb-m w-full p-t-3 p-b-32">
-                            <div class="contact100-form-checkbox">
-                                <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                                <label class="label-checkbox100" for="ckb1">
-                                    مرا به خاطر بسپار
-                                </label>
-                            </div>
-
-                            <div>
-                                <a href="#" class="txt1">
-                                    کلمه عبورتو فراموش کردی؟
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="container-login100-form-btn">
-                            <button class="login100-form-btn">
-                                ورود به کتابخونه
-                            </button>
-                        </div>
-
-                    </form>
+                </div>
 
             </div>
-            <div class="anim-sec"> 
+            <div class="anim-sec">
                 <div class="anim-sec-top">
                     <a href="#" class="anim-sec-top-back">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -107,12 +125,14 @@
                 </div>
                 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_K7aZUG.json" background="transparent"
                     speed="1" class="login-anim" loop autoplay></lottie-player>
-                    
+
             </div>
-            
+
         </section>
     </section>
-    
-    
+
+    <script type="text/javascript" src="../../assets/js/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/authentication/authentication.js"></script>
 </body>
+
 </html>
