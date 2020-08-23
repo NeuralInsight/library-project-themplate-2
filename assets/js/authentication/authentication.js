@@ -41,7 +41,7 @@ $(function() {
           "width": "500px",
           "height": "500px",
           "top": "-250px",
-          "left": "-250px",
+          "right": "-250px",
  
        }, 600);
        $("button", this).addClass('active');

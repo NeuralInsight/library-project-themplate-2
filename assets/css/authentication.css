@@ -43,6 +43,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -103,7 +104,8 @@
 	transform: scale(1);
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
-	z-index: 5;
+    z-index: 5;
+    direction: rtl;
 }
 
 .box.back {
@@ -112,7 +114,7 @@
 	-ms-transform: scale(0.95);
 	top: -20px;
 	opacity: .8;
-	z-index: -1;
+    z-index: -1;
 }
 
 .box:before {
@@ -129,7 +131,9 @@
 	-ms-transform: scale(0.95);
 	z-index: -1;
 }
-
+.overbox{
+    direction: rtl;
+}
 .overbox .title {
 	color: #fff;
 }
@@ -140,7 +144,7 @@
 
 .title {
 	width: 100%;
-	float: left;
+	float: right;
 	line-height: 46px;
 	font-size: 34px;
 	font-weight: 700;
@@ -155,7 +159,7 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
-	left: -50px;
+	right: -50px;
 	background: #ED2553;
 }
 
@@ -425,7 +429,8 @@
 }
 
 .overbox .title {
-	width: 80%;
+    width: 80%;
+    direction: rtl;
 }
 
 .overbox .input {
@@ -451,7 +456,7 @@
 	background: #ED2553;
 	position: absolute;
 	top: 40px;
-	right: -70px;
+	left: -70px;
 	cursor: pointer;
 	z-index: 100;
 	transform: translate(0%, 0%);
@@ -462,7 +467,7 @@
 .material-button .shape, .alt-2 .shape {
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 }
