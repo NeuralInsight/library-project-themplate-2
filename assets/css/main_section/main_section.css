@@ -82,13 +82,14 @@ a:hover {
 
 .my-books-body {
    margin-top: 1rem;
-   display: flex;
-   justify-content: space-between;
+   display: flex !important;
+   justify-content: space-around !important;
    align-items: center !important;
    padding: 0 10px;
+   
 }
 .my-book {
-   display: flex;
+   display: flex !important;
    border-radius: 15px;
    background-color: wheat;
    flex-basis: 30%;
@@ -96,6 +97,7 @@ a:hover {
    padding: 1rem;
    transition: 300ms ease-out;
    direction: rtl;
+   flex: row !important;
 }
 .my-book:hover {
    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
@@ -103,8 +105,9 @@ a:hover {
 
 .my-book_img {
    margin-left: 1rem;
-   flex: 1;
+   flex:1;
    position: relative;
+   
 }
 .img-overlay {
    position: absolute;
