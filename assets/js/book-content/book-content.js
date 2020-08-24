@@ -29,4 +29,14 @@ $(document).ready(function () {
         ]
     });
 });
-  
+
+$(document).ready(function(){
+    $.adaptiveBackground.run({
+        parent: '.my-book',
+        normalizeTextColor:   true,
+        normalizedTextColors:  {
+        light:      "#fff",
+        dark:       "#000"
+        },
+    })
+});

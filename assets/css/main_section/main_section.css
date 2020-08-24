@@ -99,7 +99,7 @@ a:hover {
 .my-book {
    display: flex !important;
    border-radius: 15px;
-   background-color: wheat;
+   background-color: white;
    align-items: center !important;
    padding: 1rem;
    transition: 300ms ease-out;
@@ -203,16 +203,6 @@ a:hover {
 
 .Star-Rating i:hover:before {
    color: #ffc107;
-}
-
-#my-book_left {
-   background-color: #a4d9f9;
-}
-#my-book_middel {
-   background-color: #d6cfff;
-}
-#my-book_right {
-   background-color: #a6ecd7;
 }
 
 #p-writers-and-reading {
