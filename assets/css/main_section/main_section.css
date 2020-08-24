@@ -94,7 +94,6 @@ a:hover {
    flex-basis: 30%;
    align-items: center !important;
    padding: 1rem;
-
    transition: 300ms ease-out;
    direction: rtl;
 }
