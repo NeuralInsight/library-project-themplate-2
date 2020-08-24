@@ -84,7 +84,7 @@ a:hover {
    margin-bottom: 0;
    display: flex !important;
    justify-content: space-around !important;
-   align-items: center !important;
+   align-items: stretch !important;
    /* padding: 0 10px; */
 }
 .slick-slide
@@ -141,7 +141,7 @@ a:hover {
 }
 
 .my-book_img img {
-   min-width: 24%;
+   
 }
 .my-book_img:hover .img-overlay {
    width: 100%;
@@ -221,12 +221,9 @@ a:hover {
 .content_container {
    flex-basis: 65%;
    align-items: stretch;
-   /* background-color: white; */
-   /* border-radius: 8px; */
    padding: 10px;
 }
 .p-writers-col {
-   /* background-color: teal; */
    display: flex;
    flex-direction: column;
 }
@@ -235,9 +232,8 @@ a:hover {
    padding: 1rem;
    display: flex;
    flex-direction: row;
-   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
    align-items: center;
-   margin: 0.05rem 0rem;
+   margin-top: 0.1rem;
    border-radius: 3px;
    transition: 150ms ease-out;
    direction: rtl;
@@ -339,12 +335,6 @@ a:hover {
 .progressbar {
    margin: auto !important;
 }
-
-
-
-
-
-
 
 .info-cards{
    display: flex;
