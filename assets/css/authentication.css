@@ -1,7 +1,7 @@
 .background{
     width: 100vw;
     height: 100vh;
-    background: url(../../img/auth/2453785.jpg);
+    background: url(../../img/auth/back2.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -13,13 +13,13 @@
     width: 85vw;
     height: 85vh;
     border-radius: 20px;
-    backdrop-filter:blur(100px);
+    backdrop-filter:blur(70px);
     -webkit-backdrop-filter:blur(100px);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    box-shadow: 0 0 7rem 1rem rgb(79, 3, 255);
+    box-shadow: 0 0 10rem 1rem #9f6ff8;
 }
 
 .main-sec{
@@ -27,7 +27,7 @@
     width: 60%;
     height: 100%;
     right: 0;
-    background: linear-gradient(270deg, rgb(79, 3, 255) 0%, rgba(245, 245, 245, 0) 100%);
+    background: linear-gradient(270deg, #9f6ff8 0%, rgba(245, 245, 245, 0) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@
 	position: relative;
 	top: 0;
 	opacity: 1;
-	float: left;
+	float: right;
 	padding: 60px 50px 40px 50px;
 	width: 100%;
 	background: #fff;
@@ -105,7 +105,8 @@
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
     z-index: 5;
-    direction: rtl;
+	direction: rtl;
+	text-align: right;
 }
 
 .box.back {
@@ -149,7 +150,7 @@
 	font-size: 34px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	color: #ED2553;
+	color: #9f6ff8;
 	position: relative;
 }
 
@@ -160,7 +161,7 @@
 	position: absolute;
 	top: 0;
 	right: -50px;
-	background: #ED2553;
+	background: #9f6ff8;
 }
 
 .input {
@@ -255,10 +256,10 @@
 	font-size: 24px;
 	color: rgba(0, 0, 0, 0.8);
 	font-weight: 300;
+	text-align: left;
 }
 
 .input label {
-	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	color: rgba(0, 0, 0, 0.8);
 	font-weight: 300;
@@ -286,7 +287,7 @@
 }
 
 .input .spin {
-	background: #ED2553;
+	background: #9f6ff8;
 	z-index: 4;
 	width: 0;
 }
@@ -348,7 +349,7 @@
 
 .button button {
 	background-color: #fff;
-	color: #ED2553;
+	color: #9f6ff8;
 	border: none;
 }
 
@@ -384,8 +385,8 @@
 }
 
 .button.login button:hover {
-	color: #ED2553;
-	border-color: #ED2553;
+	color: #9f6ff8;
+	border-color: #9f6ff8;
 }
 
 .button button {
@@ -406,7 +407,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #ED2553;
+	background: #9f6ff8;
 	border-radius: 50%;
 }
 
@@ -453,7 +454,7 @@
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
-	background: #ED2553;
+	background: #9f6ff8;
 	position: absolute;
 	top: 40px;
 	left: -70px;
@@ -517,10 +518,10 @@ html {
 
 .materialContainer {
 	width: 100%;
-	max-width: 460px;
+	max-width: 30rem;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 60%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
