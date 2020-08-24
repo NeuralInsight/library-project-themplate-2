@@ -62,8 +62,8 @@ $(function() {
           }, 600)
  
           $(this).animate({
-             "width": "140px",
-             "height": "140px"
+             "width": "100px",
+             "height": "100px"
           }, 500, function() {
              $(".box").removeClass("back");
  

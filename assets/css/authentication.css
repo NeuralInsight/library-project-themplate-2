@@ -451,13 +451,13 @@
 }
 
 .material-button, .alt-2 {
-	width: 140px;
-	height: 140px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	background: #9f6ff8;
 	position: absolute;
 	top: 40px;
-	left: -70px;
+	left: -50px;
 	cursor: pointer;
 	z-index: 100;
 	transform: translate(0%, 0%);
@@ -503,8 +503,6 @@
 }
 
 body {
-	background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
-	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
