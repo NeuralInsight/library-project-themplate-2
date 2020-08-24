@@ -81,20 +81,27 @@ a:hover {
 }
 
 .my-books-body {
-   margin-top: 1rem;
-   display: flex;
-   justify-content: space-between;
+   margin-bottom: 0;
+   display: flex !important;
+   justify-content: space-around !important;
    align-items: center !important;
-   padding: 0 10px;
+   /* padding: 0 10px; */
+}
+.slick-slide
+{
+   height: 100%;
+   min-height: 1px;
+   margin: 1rem;
+}
+.slick-track{
+   margin-bottom: 1rem;
 }
 .my-book {
-   display: flex;
+   display: flex !important;
    border-radius: 15px;
    background-color: wheat;
-   flex-basis: 30%;
    align-items: center !important;
    padding: 1rem;
-
    transition: 300ms ease-out;
    direction: rtl;
 }
@@ -104,8 +111,9 @@ a:hover {
 
 .my-book_img {
    margin-left: 1rem;
-   flex: 1;
+   flex:1;
    position: relative;
+   
 }
 .img-overlay {
    position: absolute;
@@ -197,18 +205,17 @@ a:hover {
    color: #ffc107;
 }
 
-#my-book-body_left {
+#my-book_left {
    background-color: #a4d9f9;
 }
-#my-book-body_middel {
+#my-book_middel {
    background-color: #d6cfff;
 }
-#my-book-body_right {
+#my-book_right {
    background-color: #a6ecd7;
 }
 
 #p-writers-and-reading {
-   margin-top: 1rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between;

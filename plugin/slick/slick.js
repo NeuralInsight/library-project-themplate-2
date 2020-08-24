@@ -407,7 +407,7 @@
     Slick.prototype.autoPlayIterator = function() {
 
         var _ = this,
-            slideTo = _.currentSlide + _.options.slidesToScroll;
+            slideTo = _.currentSlide - _.options.slidesToScroll;
 
         if ( !_.paused && !_.interrupted && !_.focussed ) {
 
