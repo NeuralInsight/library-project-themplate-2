@@ -28,5 +28,31 @@ $(document).ready(function () {
             }
         ]
     });
+
+
+
+    // const colorThief = new ColorThief();
+    // const img = document.querySelectorAll('.book-img');
+    // console.log(img)
+
+    // img.forEach(function(item) {
+
+    //         if (item.complete) {
+    //             var color = colorThief.getColor(item);
+    //             var rgb_color = `rgb(${color[0]},${color[1]},${color[2]})`;
+    //             $('.my-book').css("background-color", rgb_color);
+    //             console.log(rgb_color)
+    //         } else {
+    //             var color = colorThief.getColor(item);
+    //             var rgb_color = `rgb(${color[0]},${color[1]},${color[2]})`;
+    //             $('.my-book').css("background-color", rgb_color);
+    //         }
+
+    // });
+
+    // Make sure image is finished loading
+
+
+    
 });
   
