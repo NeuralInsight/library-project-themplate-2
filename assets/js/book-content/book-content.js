@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $(".regular").slick({
+    $(".my-books-body").slick({
         dots: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 9999,
