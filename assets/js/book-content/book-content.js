@@ -39,6 +39,18 @@ $(document).ready(function () {
         ]
     });
 
+    $('.p-books').slick({
+        dots: false,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        arrows:false,
+
+    })
 
 
     // const colorThief = new ColorThief();
@@ -63,16 +75,13 @@ $(document).ready(function () {
     // Make sure image is finished loading
 
 
-    
-});
-
-$(document).ready(function(){
     $.adaptiveBackground.run({
-        parent: '.my-book',
+        parent: '.my-book, .p-book',
         normalizeTextColor:   true,
         normalizedTextColors:  {
         light:      "#fff",
         dark:       "#000"
         },
     })
+
 });
