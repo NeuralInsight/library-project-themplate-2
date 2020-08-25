@@ -8,30 +8,35 @@ a:hover {
    text-decoration: none;
    cursor: pointer;
 }
-#main-section {
-   display: flex;
-   flex-direction: row;
-}
+ 
 .main-content {
-   height: calc(100vh - 7rem);
-   margin: 0rem;
-   margin-right: 7rem;
-   padding: 0;
+   width: calc(100% - 7rem);
+   height: calc(100% - 7rem);
+   position: relative;
+   display: grid;
+   grid-template-columns: 30% 70%;
+   grid-template-rows: 100%;
+   justify-content: stretch;
+   align-content: stretch;
 }
 
 .right-div {
-   /* flex-basis: 70%; */
-   display: flex;
-   flex-direction: column;
+   grid-column: 2;
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-rows: auto auto;
    padding: 0.5rem;
 }
 .left-div {
-   display: flex;
-   flex-direction: column;
+   grid-column: 1;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 20% 80%;
    /* flex-basis: auto; */
    padding: 0.5rem;
 }
 .my-books {
+   grid-column: 1 / span 4;
    border-radius: 8px;
 }
 .content_header {
@@ -201,6 +206,8 @@ a:hover {
 }
 
 #p-writers-and-reading {
+   grid-column: 1 / span 4;
+   grid-row: 2;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
