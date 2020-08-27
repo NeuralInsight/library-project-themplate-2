@@ -9,15 +9,7 @@ a:hover {
    cursor: pointer;
 }
  
-.main-content {
-   width: calc(100% - 7rem);
-   height: calc(100% - 7rem);
-   display: grid;
-   grid-template-columns: 30% 70%;
-   grid-template-rows: 100%;
-   justify-content: stretch;
-   align-content: stretch;
-}
+
 
 .right-div {
    grid-column: 2;
