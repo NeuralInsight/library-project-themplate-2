@@ -15,14 +15,12 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     color: black;
     background-color: #f3f3f3;
     margin: 0;
     padding: 0;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar {
