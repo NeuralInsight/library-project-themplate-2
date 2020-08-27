@@ -12,7 +12,6 @@ a:hover {
 .main-content {
    width: calc(100% - 7rem);
    height: calc(100% - 7rem);
-   position: relative;
    display: grid;
    grid-template-columns: 30% 70%;
    grid-template-rows: 100%;
@@ -24,8 +23,9 @@ a:hover {
    grid-column: 2;
    display: grid;
    grid-template-columns: 25% 25% 25% 25%;
-   grid-template-rows: auto auto;
+   grid-template-rows: 43% 57%;
    padding: 0.5rem;
+   position: relative;
 }
 .left-div {
    grid-column: 1;
@@ -59,7 +59,7 @@ a:hover {
    direction: rtl;
    flex-flow: column nowrap;
    background-color: white;
-   padding: 1rem;
+   /* padding: 0.5rem; */
    border-bottom-right-radius: 10px;
    border-bottom-left-radius: 10px;
 }
@@ -210,10 +210,11 @@ a:hover {
    grid-row: 2;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: stretch;
 }
 .popular-writers {
+   max-height: 20rem;
    flex-basis: 33%;
    border-top-left-radius: 0.8rem;
    border-top-right-radius: 0.8rem;
@@ -222,7 +223,7 @@ a:hover {
 }
 .content_container {
    flex-basis: 65%;
-   align-items: stretch;
+   /* align-items: stretch; */
    padding: 10px;
 }
 .p-writers-col {
@@ -287,8 +288,8 @@ a:hover {
    display: flex;
    align-items: center;
    margin-bottom: 1rem;
+   padding: 0 1rem;
    /* justify-content: space-between; */
-   margin-bottom: 1rem;
 }
 .reading-book:last-child {
    border-bottom-left-radius: 0.8rem;
