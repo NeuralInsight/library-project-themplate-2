@@ -39,18 +39,18 @@ $(document).ready(function () {
         ]
     });
 
-    $('.p-books').slick({
-        dots: false,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        autoplaySpeed: 3000,
-        autoplay: true,
-        arrows:false,
+   //  $('.p-books').slick({
+   //      dots: false,
+   //      vertical: true,
+   //      centerMode: true,
+   //      slidesToShow: 2,
+   //      slidesToScroll: 1,
+   //      infinite: true,
+   //      autoplaySpeed: 3000,
+   //      autoplay: true,
+   //      arrows:false,
 
-    })
+   //  })
 
 
     // const colorThief = new ColorThief();
@@ -85,3 +85,35 @@ $(document).ready(function () {
     })
 
 });
+
+var slider = $(".p-books");
+var scrollCount = null;
+var scroll= null;
+
+slider
+    .slick({
+        dots: false,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        arrows:false,
+    });
+
+slider.on('wheel', (function(e) {
+    e.preventDefault();
+
+    clearTimeout(scroll);
+    scroll = setTimeout(function(){scrollCount=0;}, 200);
+    if(scrollCount) return 0;
+    scrollCount=1;
+
+    if (e.originalEvent.deltaY < 0) {
+        $(this).slick('slickNext');
+    } else {
+        $(this).slick('slickPrev');
+    }
+}));
