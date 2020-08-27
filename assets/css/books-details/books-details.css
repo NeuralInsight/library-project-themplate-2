@@ -1,0 +1,29 @@
+.main-content{
+    display: flex;
+}
+#right-section{
+    display: flex;
+    flex-basis: 100%;
+}
+.books-info{
+    display: flex;
+    background-color: lightcoral;
+    padding: 1rem;
+    flex-basis: 30%;
+    flex-direction: column;
+}
+.books-info-header{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.books-info-header-icon-text{
+    display: flex;
+    margin-right: auto;
+}
+.books-info-navs{
+    display: flex;
+}
+.books-info-body{
+    
+}
