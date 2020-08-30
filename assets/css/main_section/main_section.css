@@ -449,3 +449,7 @@ a:hover {
 .p-books .slick-track {
    padding: 1rem 0rem;
 }
+
+#popular-book-header{
+   padding: 1rem;
+}
